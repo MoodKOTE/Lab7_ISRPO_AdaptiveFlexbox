@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background: linear-gradient(to right, #8106A9, #7446D7);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    margin-bottom: 15px; 
+}
+
+/* Основной контейнер для карточек и меню */
+.main-container {
+    display: flex;
+    flex: 1;
+    margin: 0 10px 100px 10px;
+    gap: 20px;
+}
+
+/* Стили для контейнера с карточками */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+.cards h3 {
+    margin-bottom: 5px;
+}
+
+/* Изменения для квадратных карточек */
+.card {
+    flex: 0 0 300px; 
+    height: 200px; 
+    background-color: blueviolet;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btns button {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info {
+    background-color: #01d1d1;
+}
+
+.info:hover {
+    background-color: #009696;
+}
+
+.buy {
+    background-color: #2db42d;
+}
+
+.buy:hover {
+    background-color: #239123;
+}
+
+.menu {
+    background-color: #7446D7;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    height: fit-content;
+    color: aliceblue;
+}
+
+.menu h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.menu button {
+    background-color: rgb(160, 146, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu button:hover {
+    background-color: rgba(160, 146, 240, 0.8);
+}
+
+footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #8106A9, #7446D7);
+    color: aliceblue;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.end button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.end button:hover {
+    background-color: rgb(163, 163, 163);
+}
